@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderDetailsActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order_by_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="@color/divider" />
+
+
+            <TextView
+                android:id="@+id/order_by_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center|start"
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:drawablePadding="20dp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/view_start_margin"
+                android:layout_marginEnd="6dp"
+                android:background="@color/divider" />
+
+
+            <TextView
+                android:id="@+id/order_by_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center|start"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:drawablePadding="20dp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/view_start_margin"
+                android:layout_marginEnd="6dp"
+                android:background="@color/divider" />
+
+
+            <TextView
+                android:id="@+id/order_by_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center|start"
+                android:drawableStart="@drawable/ic_call_black_24dp"
+                android:drawablePadding="20dp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/view_start_margin"
+                android:layout_marginEnd="6dp"
+                android:background="@color/divider"/>
+
+
+
+                <TextView
+                    android:id="@+id/order_by_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center|start"
+                    android:drawableStart="@drawable/ic_location_on_black_24dp"
+                    android:drawablePadding="20dp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/view_start_margin"
+                android:layout_marginEnd="6dp"
+                android:background="@color/divider" />
+
+
+            <TextView
+                android:id="@+id/order_date_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center|start"
+                android:drawableStart="@drawable/ic_access_time_black_24dp"
+                android:drawablePadding="20dp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/view_start_margin"
+                android:layout_marginEnd="6dp"
+                android:background="@color/divider" />
+
+
+            <TextView
+                android:id="@+id/order_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:drawableStart="@drawable/ic_attach_money_black_24dp"
+                android:drawablePadding="20dp"
+                android:layout_margin="10dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/view_start_margin"
+                android:layout_marginEnd="6dp"
+                android:background="@color/divider" />
+
+
+            <TextView
+                android:id="@+id/order_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center|start"
+                android:drawableStart="@drawable/ic_comment_black_24dp"
+                android:drawablePadding="20dp"
+                android:text="Not Any" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/view_start_margin"
+                android:layout_marginEnd="6dp"
+                android:background="@color/divider" />
+
+
+            <TextView
+                android:id="@+id/order_payment_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="CASH" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/order_payment_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="@color/divider" />
+            <TextView
+                android:id="@+id/order_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Order Items"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/order_cart_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:orientation="horizontal">
+    <Button
+        android:id="@+id/confirm_order"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="?android:attr/buttonBarStyle"
+        android:enabled="false"
+        android:background="@android:color/holo_orange_light"
+        android:text="Confirm Order" />
+
+    <Button
+        android:id="@+id/order_delivered"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarStyle"
+        android:enabled="false"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Order Delivered" />
+   </LinearLayout>
+</RelativeLayout>
+
+

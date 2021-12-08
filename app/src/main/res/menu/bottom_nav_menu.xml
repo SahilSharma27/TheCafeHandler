@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/orders"
+        android:enabled="true"
+        android:title="Orders"
+        app:showAsAction="always"
+        android:icon="@drawable/order"/>
+    <item android:id="@+id/table_reservation"
+        android:enabled="true"
+        android:title="Table Reservation"
+        android:icon="@drawable/table1"
+        app:showAsAction="always"/>
+</menu>
